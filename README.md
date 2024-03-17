@@ -17,7 +17,8 @@ Front com apenas um tela de consuta de cotação, no momento ainda estou com pro
 Optei em criar uma estrutura desacoplada para consulta da cotação, assim é mais fácil há implementação de uma outra API para cotação, como por exemplo fixer.io.
 Basta fazer a integração implementando a interface GetQuoteServiceInterface 
 
-## Cobetura de Teste
+## Cobetura de Teste 
+Total: 77.0 %
 
 ![Cobertura de Teste](https://i.ibb.co/cTWK8xR/Captura-de-tela-2024-03-17-023016.png)
 
