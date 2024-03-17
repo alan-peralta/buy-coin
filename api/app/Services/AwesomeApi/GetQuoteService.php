@@ -25,7 +25,7 @@ class GetQuoteService implements GetQuoteServiceInterface
         $response = Http::retry(5)->get($this->base_url . '/json/last/' . $currency);
 
         if (!$response->successful()) {
-            $response->throw();
+           throw new HttpClientException($response->json());
         }
 
         return $response->json();

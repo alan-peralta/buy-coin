@@ -12,7 +12,7 @@ class Status extends Model
     public const NEW = 1;
     public const APPROVED = 2;
     public const CANCELLED = 3;
-    public const EXPIRED = 3;
+    public const EXPIRED = 4;
 
     public const FINALIZE_ORDER = [
         self::APPROVED,

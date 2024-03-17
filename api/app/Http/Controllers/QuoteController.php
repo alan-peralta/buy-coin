@@ -2,74 +2,30 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Resources\QuoteResource;
 use App\Interfaces\GetQuoteServiceInterface;
 use App\Models\CoinCombination;
-use Illuminate\Http\JsonResponse;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class QuoteController extends Controller
 {
-    public function index(Request $request): JsonResponse
+    public function index(): QuoteResource
     {
         $coins = CoinCombination::query()->toBase()
             ->where('coin_combinations.is_active', 1)
             ->join('coins as from', 'from_coin_id', 'from.id')
-            ->join('coins as to', 'to_coin_id', 'to.id')
-            ->pluck(DB::raw("CONCAT(from.acronym, '-', to.acronym) as currency"))
-            ->toArray();
+            ->join('coins as to', 'to_coin_id', 'to.id');
+
+            $data = [];
+            foreach ($coins->get(["to.acronym as to", "from.acronym as from"]) as $item) {
+                $data[] = $item->from . "-" . $item->to;
+            }
+            $coins = $data;
 
         $currency = implode(",", $coins);
-        $quote = app(GetQuoteServiceInterface::class)->execute($currency);
 
-        return response()->json($quote);
-    }
+        $quotes = app(GetQuoteServiceInterface::class)->execute($currency);
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        return new QuoteResource($quotes);
     }
 }

@@ -14,7 +14,7 @@ export default defineComponent({
     listQuotes() {
       QuoteDataService.getAll()
         .then((response) => {
-          this.quotes = response.data;
+          this.quotes = response.data['data'];
         })
         .catch((e: Error) => {
           console.log(e)
@@ -60,8 +60,8 @@ export default defineComponent({
             </thead>
             <tbody v-for="(quote, index) in quotes" :key="index">
               <tr>
-                <th scope="row">{{ quote.code }} - {{ quote.name }}</th>
-                <td>{{ quote.bid }}</td>
+                <th scope="row">{{ quote.from }} - {{ quote.name }}</th>
+                <td>{{ quote.value_formatted }}</td>
               </tr>
             </tbody>
           </table>

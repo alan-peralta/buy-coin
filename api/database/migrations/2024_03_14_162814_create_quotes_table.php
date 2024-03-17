@@ -19,10 +19,6 @@ return new class extends Migration
             $table->integer('bid_decimals');
             $table->bigInteger('ask');
             $table->integer('ask_decimals');
-            $table->bigInteger('bid_spread');
-            $table->integer('bid_spread_decimals');
-            $table->bigInteger('ask_spread');
-            $table->integer('ask_spread_decimals');
             $table->timestamps();
         });
     }

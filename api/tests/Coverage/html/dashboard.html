@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /home/alan/projects/teste/api/app</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=10.1.14" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=10.1.14" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=10.1.14" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/home/alan/projects/teste/api/app</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Controllers/CoinController.php.html#11">App\Http\Controllers\CoinController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#8">App\Http\Middleware\Authenticate</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#11">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#7">App\Http\Middleware\TrustHosts</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Order.php.html#19">App\Models\Order</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Quote.php.html#17">App\Models\Quote</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#8">App\Providers\BroadcastServiceProvider</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/CoinCombination.php.html#15">App\Models\CoinCombination</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Console/Kernel.php.html#8">App\Console\Kernel</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#15">App\Http\Controllers\Api\AuthController</a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Services/AwesomeApi/GetQuoteService.php.html#11">App\Services\AwesomeApi\GetQuoteService</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Http/Controllers/QuoteController.php.html#10">App\Http\Controllers\QuoteController</a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Console/Commands/AwesomeApi/GetCoins.php.html#10">App\Console\Commands\AwesomeApi\GetCoins</a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#11">App\Http\Middleware\RedirectIfAuthenticated</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#15">App\Http\Controllers\Api\AuthController</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#8">App\Http\Middleware\Authenticate</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Services/AwesomeApi/GetQuoteService.php.html#11">App\Services\AwesomeApi\GetQuoteService</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/QuoteController.php.html#10">App\Http\Controllers\QuoteController</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Console/Commands/AwesomeApi/GetCoins.php.html#10">App\Console\Commands\AwesomeApi\GetCoins</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Console/Kernel.php.html#13"><abbr title="App\Console\Kernel::schedule">schedule</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/CoinController.php.html#13"><abbr title="App\Http\Controllers\CoinController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#13"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#18"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Middleware/TrustHosts.php.html#14"><abbr title="App\Http\Middleware\TrustHosts::hosts">hosts</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/CoinCombination.php.html#31"><abbr title="App\Models\CoinCombination::to">to</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Order.php.html#23"><abbr title="App\Models\Order::quote">quote</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Models/Quote.php.html#22"><abbr title="App\Models\Quote::orders">orders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Providers/BroadcastServiceProvider.php.html#13"><abbr title="App\Providers\BroadcastServiceProvider::boot">boot</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#51"><abbr title="App\Http\Controllers\Api\AuthController::login">login</abbr></a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#17"><abbr title="App\Http\Controllers\Api\AuthController::register">register</abbr></a></td><td class="text-right">73%</td></tr>
+       <tr><td><a href="Services/AwesomeApi/GetQuoteService.php.html#23"><abbr title="App\Services\AwesomeApi\GetQuoteService::execute">execute</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Http/Controllers/QuoteController.php.html#12"><abbr title="App\Http\Controllers\QuoteController::index">index</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Console/Commands/AwesomeApi/GetCoins.php.html#25"><abbr title="App\Console\Commands\AwesomeApi\GetCoins::handle">handle</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Http/Middleware/RedirectIfAuthenticated.php.html#18"><abbr title="App\Http\Middleware\RedirectIfAuthenticated::handle">handle</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Http/Middleware/Authenticate.php.html#13"><abbr title="App\Http\Middleware\Authenticate::redirectTo">redirectTo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#51"><abbr title="App\Http\Controllers\Api\AuthController::login">login</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Http/Controllers/Api/AuthController.php.html#17"><abbr title="App\Http\Controllers\Api\AuthController::register">register</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controllers/QuoteController.php.html#12"><abbr title="App\Http\Controllers\QuoteController::index">index</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Console/Commands/AwesomeApi/GetCoins.php.html#25"><abbr title="App\Console\Commands\AwesomeApi\GetCoins::handle">handle</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Services/AwesomeApi/GetQuoteService.php.html#23"><abbr title="App\Services\AwesomeApi\GetQuoteService::execute">execute</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 10.1.14</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.16</a> and <a href="https://phpunit.de/">PHPUnit 10.5.13</a> at Sun Mar 17 2:23:17 -03 2024.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=10.1.14" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=10.1.14" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=10.1.14" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,0,0,0,0,0,1,1,1,3,1,30], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([9,0,0,0,0,0,0,0,3,2,1,26], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[91.30434782608695,7,"<a href=\"Console\/Commands\/AwesomeApi\/GetCoinCombinations.php.html#13\">App\\Console\\Commands\\AwesomeApi\\GetCoinCombinations<\/a>"],[88.88888888888889,3,"<a href=\"Console\/Commands\/AwesomeApi\/GetCoins.php.html#10\">App\\Console\\Commands\\AwesomeApi\\GetCoins<\/a>"],[66.66666666666666,2,"<a href=\"Console\/Kernel.php.html#8\">App\\Console\\Kernel<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#8\">App\\Exceptions\\Handler<\/a>"],[73.46938775510205,8,"<a href=\"Http\/Controllers\/Api\/AuthController.php.html#15\">App\\Http\\Controllers\\Api\\AuthController<\/a>"],[0,1,"<a href=\"Http\/Controllers\/CoinController.php.html#11\">App\\Http\\Controllers\\CoinController<\/a>"],[100,0,"<a href=\"Http\/Controllers\/Controller.php.html#9\">App\\Http\\Controllers\\Controller<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Order\/FinalizeOrderController.php.html#12\">App\\Http\\Controllers\\Order\\FinalizeOrderController<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Order\/PrepareOrderController.php.html#17\">App\\Http\\Controllers\\Order\\PrepareOrderController<\/a>"],[85.71428571428571,3,"<a href=\"Http\/Controllers\/QuoteController.php.html#10\">App\\Http\\Controllers\\QuoteController<\/a>"],[100,0,"<a href=\"Http\/Kernel.php.html#7\">App\\Http\\Kernel<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#8\">App\\Http\\Middleware\\Authenticate<\/a>"],[100,0,"<a href=\"Http\/Middleware\/EncryptCookies.php.html#7\">App\\Http\\Middleware\\EncryptCookies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/PreventRequestsDuringMaintenance.php.html#7\">App\\Http\\Middleware\\PreventRequestsDuringMaintenance<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#11\">App\\Http\\Middleware\\RedirectIfAuthenticated<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrimStrings.php.html#7\">App\\Http\\Middleware\\TrimStrings<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#7\">App\\Http\\Middleware\\TrustHosts<\/a>"],[100,0,"<a href=\"Http\/Middleware\/TrustProxies.php.html#8\">App\\Http\\Middleware\\TrustProxies<\/a>"],[100,0,"<a href=\"Http\/Middleware\/ValidateSignature.php.html#7\">App\\Http\\Middleware\\ValidateSignature<\/a>"],[100,0,"<a href=\"Http\/Middleware\/VerifyCsrfToken.php.html#7\">App\\Http\\Middleware\\VerifyCsrfToken<\/a>"],[100,2,"<a href=\"Http\/Requests\/FinalizeOrderRequest.php.html#9\">App\\Http\\Requests\\FinalizeOrderRequest<\/a>"],[100,2,"<a href=\"Http\/Requests\/PrepareOrderRequest.php.html#10\">App\\Http\\Requests\\PrepareOrderRequest<\/a>"],[100,2,"<a href=\"Http\/Resources\/QuoteResource.php.html#8\">App\\Http\\Resources\\QuoteResource<\/a>"],[100,0,"<a href=\"Models\/Coin.php.html#8\">App\\Models\\Coin<\/a>"],[50,2,"<a href=\"Models\/CoinCombination.php.html#15\">App\\Models\\CoinCombination<\/a>"],[100,0,"<a href=\"Models\/CoinTax.php.html#8\">App\\Models\\CoinTax<\/a>"],[0,1,"<a href=\"Models\/Order.php.html#19\">App\\Models\\Order<\/a>"],[0,1,"<a href=\"Models\/Quote.php.html#17\">App\\Models\\Quote<\/a>"],[100,0,"<a href=\"Models\/Status.php.html#8\">App\\Models\\Status<\/a>"],[100,0,"<a href=\"Models\/SystemConfiguration.php.html#8\">App\\Models\\SystemConfiguration<\/a>"],[100,0,"<a href=\"Models\/User.php.html#16\">App\\Models\\User<\/a>"],[100,2,"<a href=\"Providers\/AppServiceProvider.php.html#7\">App\\Providers\\AppServiceProvider<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#8\">App\\Providers\\AuthServiceProvider<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#8\">App\\Providers\\BroadcastServiceProvider<\/a>"],[100,2,"<a href=\"Providers\/EventServiceProvider.php.html#10\">App\\Providers\\EventServiceProvider<\/a>"],[100,2,"<a href=\"Providers\/QuoteServiceProvider.php.html#9\">App\\Providers\\QuoteServiceProvider<\/a>"],[100,2,"<a href=\"Providers\/RouteServiceProvider.php.html#11\">App\\Providers\\RouteServiceProvider<\/a>"],[80,3,"<a href=\"Services\/AwesomeApi\/GetQuoteService.php.html#11\">App\\Services\\AwesomeApi\\GetQuoteService<\/a>"],[100,1,"<a href=\"Services\/GetCoinDefaultIdService.php.html#8\">App\\Services\\GetCoinDefaultIdService<\/a>"],[100,1,"<a href=\"Services\/GetCoinDefaultService.php.html#8\">App\\Services\\GetCoinDefaultService<\/a>"],[100,1,"<a href=\"Services\/GetMinimunAmountService.php.html#8\">App\\Services\\GetMinimunAmountService<\/a>"],[100,1,"<a href=\"Services\/GetTaxAmountService.php.html#7\">App\\Services\\GetTaxAmountService<\/a>"],[100,1,"<a href=\"Services\/Order\/CreateOrderService.php.html#8\">App\\Services\\Order\\CreateOrderService<\/a>"],[100,1,"<a href=\"Services\/Quote\/CreateQuoteService.php.html#7\">App\\Services\\Quote\\CreateQuoteService<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[91.30434782608695,7,"<a href=\"Console\/Commands\/AwesomeApi\/GetCoinCombinations.php.html#33\">App\\Console\\Commands\\AwesomeApi\\GetCoinCombinations::handle<\/a>"],[88.88888888888889,3,"<a href=\"Console\/Commands\/AwesomeApi\/GetCoins.php.html#25\">App\\Console\\Commands\\AwesomeApi\\GetCoins::handle<\/a>"],[0,1,"<a href=\"Console\/Kernel.php.html#13\">App\\Console\\Kernel::schedule<\/a>"],[100,1,"<a href=\"Console\/Kernel.php.html#21\">App\\Console\\Kernel::commands<\/a>"],[100,1,"<a href=\"Exceptions\/Handler.php.html#24\">App\\Exceptions\\Handler::register<\/a>"],[73.91304347826086,3,"<a href=\"Http\/Controllers\/Api\/AuthController.php.html#17\">App\\Http\\Controllers\\Api\\AuthController::register<\/a>"],[70.83333333333334,4,"<a href=\"Http\/Controllers\/Api\/AuthController.php.html#51\">App\\Http\\Controllers\\Api\\AuthController::login<\/a>"],[100,1,"<a href=\"Http\/Controllers\/Api\/AuthController.php.html#88\">App\\Http\\Controllers\\Api\\AuthController::logout<\/a>"],[0,1,"<a href=\"Http\/Controllers\/CoinController.php.html#13\">App\\Http\\Controllers\\CoinController::index<\/a>"],[100,3,"<a href=\"Http\/Controllers\/Order\/FinalizeOrderController.php.html#17\">App\\Http\\Controllers\\Order\\FinalizeOrderController::__invoke<\/a>"],[100,2,"<a href=\"Http\/Controllers\/Order\/PrepareOrderController.php.html#19\">App\\Http\\Controllers\\Order\\PrepareOrderController::__invoke<\/a>"],[85.71428571428571,3,"<a href=\"Http\/Controllers\/QuoteController.php.html#12\">App\\Http\\Controllers\\QuoteController::index<\/a>"],[0,2,"<a href=\"Http\/Middleware\/Authenticate.php.html#13\">App\\Http\\Middleware\\Authenticate::redirectTo<\/a>"],[0,4,"<a href=\"Http\/Middleware\/RedirectIfAuthenticated.php.html#18\">App\\Http\\Middleware\\RedirectIfAuthenticated::handle<\/a>"],[0,1,"<a href=\"Http\/Middleware\/TrustHosts.php.html#14\">App\\Http\\Middleware\\TrustHosts::hosts<\/a>"],[100,1,"<a href=\"Http\/Requests\/FinalizeOrderRequest.php.html#14\">App\\Http\\Requests\\FinalizeOrderRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/FinalizeOrderRequest.php.html#24\">App\\Http\\Requests\\FinalizeOrderRequest::rules<\/a>"],[100,1,"<a href=\"Http\/Requests\/PrepareOrderRequest.php.html#15\">App\\Http\\Requests\\PrepareOrderRequest::authorize<\/a>"],[100,1,"<a href=\"Http\/Requests\/PrepareOrderRequest.php.html#25\">App\\Http\\Requests\\PrepareOrderRequest::rules<\/a>"],[100,2,"<a href=\"Http\/Resources\/QuoteResource.php.html#10\">App\\Http\\Resources\\QuoteResource::toArray<\/a>"],[100,1,"<a href=\"Models\/CoinCombination.php.html#26\">App\\Models\\CoinCombination::from<\/a>"],[0,1,"<a href=\"Models\/CoinCombination.php.html#31\">App\\Models\\CoinCombination::to<\/a>"],[0,1,"<a href=\"Models\/Order.php.html#23\">App\\Models\\Order::quote<\/a>"],[0,1,"<a href=\"Models\/Quote.php.html#22\">App\\Models\\Quote::orders<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#12\">App\\Providers\\AppServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/AppServiceProvider.php.html#20\">App\\Providers\\AppServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/AuthServiceProvider.php.html#22\">App\\Providers\\AuthServiceProvider::boot<\/a>"],[0,1,"<a href=\"Providers\/BroadcastServiceProvider.php.html#13\">App\\Providers\\BroadcastServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#26\">App\\Providers\\EventServiceProvider::boot<\/a>"],[100,1,"<a href=\"Providers\/EventServiceProvider.php.html#34\">App\\Providers\\EventServiceProvider::shouldDiscoverEvents<\/a>"],[100,1,"<a href=\"Providers\/QuoteServiceProvider.php.html#14\">App\\Providers\\QuoteServiceProvider::register<\/a>"],[100,1,"<a href=\"Providers\/QuoteServiceProvider.php.html#22\">App\\Providers\\QuoteServiceProvider::boot<\/a>"],[100,2,"<a href=\"Providers\/RouteServiceProvider.php.html#25\">App\\Providers\\RouteServiceProvider::boot<\/a>"],[100,1,"<a href=\"Services\/AwesomeApi\/GetQuoteService.php.html#15\">App\\Services\\AwesomeApi\\GetQuoteService::__construct<\/a>"],[75,2,"<a href=\"Services\/AwesomeApi\/GetQuoteService.php.html#23\">App\\Services\\AwesomeApi\\GetQuoteService::execute<\/a>"],[100,1,"<a href=\"Services\/GetCoinDefaultIdService.php.html#10\">App\\Services\\GetCoinDefaultIdService::execute<\/a>"],[100,1,"<a href=\"Services\/GetCoinDefaultService.php.html#10\">App\\Services\\GetCoinDefaultService::execute<\/a>"],[100,1,"<a href=\"Services\/GetMinimunAmountService.php.html#10\">App\\Services\\GetMinimunAmountService::execute<\/a>"],[100,1,"<a href=\"Services\/GetTaxAmountService.php.html#9\">App\\Services\\GetTaxAmountService::execute<\/a>"],[100,1,"<a href=\"Services\/Order\/CreateOrderService.php.html#10\">App\\Services\\Order\\CreateOrderService::execute<\/a>"],[100,1,"<a href=\"Services\/Quote\/CreateQuoteService.php.html#9\">App\\Services\\Quote\\CreateQuoteService::execute<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

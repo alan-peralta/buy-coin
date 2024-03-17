@@ -27,7 +27,6 @@ class PrepareOrderRequest extends FormRequest
         return [
             'coin_id' => [
                 'required',
-                'integer',
                 Rule::exists('coins', 'id')
             ],
             'amount' => [

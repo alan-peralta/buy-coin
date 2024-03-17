@@ -29,7 +29,6 @@ class GetCoins extends Command
         if (!$response->successful()) {
             throw new HttpClientException();
         }
-
         foreach ($response->json() as $key => $item) {
             Coin::query()->updateOrCreate([
                 'acronym' => $key

@@ -16,9 +16,16 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->bigInteger('amount');
             $table->integer('amount_decimals');
+            $table->bigInteger('amount_converted');
+            $table->integer('amount_converted_decimals');
+            $table->integer('tax');
             $table->unsignedBigInteger('quote_id');
-            $table->integer('status_id');
+            $table->unsignedBigInteger('status_id');
             $table->timestamps();
+
+            $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('quote_id')->references('id')->on('quotes');
+            $table->foreign('status_id')->references('id')->on('statuses');
         });
     }
 
