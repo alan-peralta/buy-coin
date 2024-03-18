@@ -17,6 +17,8 @@ Front com apenas um tela de consuta de cotação, no momento ainda estou com pro
 Optei em criar uma estrutura desacoplada para consulta da cotação, assim é mais fácil há implementação de uma outra API para cotação, como por exemplo fixer.io.
 Basta fazer a integração implementando a interface GetQuoteServiceInterface 
 
+Criei dois commands, um para buscar as moedas que estão disponível na api e salvar na tabela coins, outro para buscar os câmbios disponível e salvar na tabela coin_combinations, a tabela orders é para criar um histórico das  transações do usuário que começa a valer desde o momento em que ele informa o valor que ele pretende comprar de um certa moeda.
+
 ## Cobetura de Teste 
 Total: 77.0 %
 
